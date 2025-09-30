@@ -22,6 +22,7 @@
 	
 <!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
 	<body>
+		<header style="background-color:MidnightBlue; "> 
 
 <!-- меню (navigation bar) -->
 
@@ -44,15 +45,15 @@
 
 <!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
 
-		<header style="background-color:green; padding-top:70px; "> 
+		<header style="background-color:RoyalBlue; padding-top:70px;;"> 
 			<div class="container"> 
 				<div class="row">
 					<div class="col-md-4">
 						<br><br>
 <!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Полина Сушко</h1>
+						<h1 style="color:Khaki; font-family:monospace"><b>Полина Сушко</b></h1>
 						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>СОЗДАВАТЬ</i> личные странички</b></p> 
+						<p style="color:Khaki; font-family:monospace; font-size:20px"><i>Юный лингвист</i>, умеющий создавать квазислова и <b>HTML</b></p> 
 					</div>
 					<div class="col-md-4">
 <!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
@@ -72,43 +73,52 @@
 
 <!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
 					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+						<h3 style="color:Khaki; font-family:monospace"><b>Место учебы</b></h3>
+						<p style="color:#96C1EA; font-family:monospace; font-size:16px">Фундаментальная и компьютерная лингвистика, НИУ ВШЭ, Москва</p>
 					</article>
 					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
+						<h3 style="color:Khaki; font-family:monospace"><b>Родной город</b></h3>
+						<p style="color:#96C1EA; font-family:monospace; font-size:16px">Омск</p>
 					</article>
 					<article>
-						<h3>Школа</h3>
+						<h3 style="color:Khaki; font-family:monospace"><b>Школа</b></h3>
 <!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
+						<p style="color:#96C1EA; font-family:monospace; font-size:16px">Гимназия №62</p>
 					</article>
 				</div>
-
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
-				</div>
+				
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
-					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
-					</ul>
+					<article>
+						<h3 style="color:Khaki; font-family:monospace"> Мои любимые разделы лингвистики это <i>фонетика</i> и <b>этимология</b> XD </h3><br>
+						
+						<h4 style="color:#96C1EA; font-family:monospace">у меня есть много разных хобби <h4>
+						
+						<p  style="color:#96C1EA; font-family:monospace"> например, я играю на <i>мелодике</i> и рисую прикольные <b>картинки</b> <br>
+						как эта</p>
+					</article>
+					<img src="arrow.png" style="height:100px; margin:20px 20px 40px 20px; " >
+				</div>
+				
+				
+				<div class="col-md-3">
+					<img src="picture.png" style="height:280px; margin:20px 40px 20px 0px; " >
+				</div>
+			</div>
+		</section>
+		<section id="plus">
+			<div class="container">
+				<div class="col-md-2">
+					<h3 style="color:Khaki; font-family:monospace">Я в соцсетях</h3>
+	<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+						<ul style="color:#96C1EA; font-family:monospace; font-size:16px">
+							<li><a href="https://github.com/polina-cywko">GitHub</a></li>
+							<li><a href="https://vk.com/poli_na_s">VK</a></li>
+							<li><a href="https://ru.pinterest.com/EmKamni/">Pinterest</a></li>
+						</ul>
+				</div>
+				<div class="col-md-10">
+					<img src="ura.gif" style="height:150px; margin:20px 50px 20px 0px; " >
 				</div>
 			</div>
 		</section>
@@ -116,7 +126,7 @@
 <!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
 		<footer class="bs-docs-footer"> 
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
+				<p style="text-align:right; color:Khaki; font-family:monospace; ">&copy; Полина С. 2025</p> 
 			</div>
 		</footer>
 	</body>
